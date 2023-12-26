@@ -140,6 +140,17 @@ video {
 
 
 @media (max-width: 750px) {
+    .header-tutorial {
+        width: 100%;
+        position: fixed;
+        min-height: 80px;
+        background-color: white;
+        text-indent: 5px;
+        display: flex;
+        margin-top: -1px;
+        z-index: 1000;
+    }
+
     .header-tutorial-top img {
         margin-top: 10px;
         width: 90px;
