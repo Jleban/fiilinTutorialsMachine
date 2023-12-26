@@ -64,7 +64,6 @@ li {
 
 .header-tutorial {
 	width: 100%;
-	/* height: 93vh; */
 	position: fixed;
     min-height: 120px;
     background-color: white;
@@ -72,7 +71,6 @@ li {
     display: flex;
     margin-top: -1px;
     z-index: 1000;
-
 }
 
 .header-tutorial-top {
@@ -93,10 +91,6 @@ li {
     text-align: center; 
     margin-left: 100px;
 }
-
-/* .general-explanation {
-    margin
-} */
 
 .body-tutorial {
     width: 75%;
@@ -142,4 +136,31 @@ video {
     color: var(--beige);
     margin: auto 0;
     margin-left: 20px
+}
+
+
+@media (max-width: 750px) {
+    .header-tutorial-top img {
+        margin-top: 10px;
+        width: 90px;
+        height: 50px
+    }
+
+    .header-tutorial-content {
+        color: var(--blue);
+        margin: auto 0;
+        text-align: center; 
+        margin-left: 0px;
+    }
+
+    h1{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .questions-email {
+        color: var(--beige);
+        margin: auto 0;
+        margin-left: 0px
+    }
 }
