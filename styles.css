@@ -190,7 +190,8 @@ video {
     h1{
         font-size: 28px;
         text-align: center;
-        color: var(--blue)
+        color: var(--blue);
+        margin-right: 10px;
     }
 
     .questions-email {
