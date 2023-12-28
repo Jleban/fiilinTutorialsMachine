@@ -196,7 +196,14 @@ video {
     .questions-email {
         color: var(--beige);
         margin: auto 0;
-        margin-left: 0px
+        margin-left: 0px;
+        margin-right: 5px;
+
+    }
+
+    .footer-image {
+        width: 90px;
+        margin: 10px;
     }
 }
 
@@ -240,5 +247,18 @@ video {
         font-size: 24px;
         text-align: center;
         color: var(--blue)
+    }
+
+    .questions-email {
+        color: var(--beige);
+        margin: auto 0;
+        margin-left: 0px;
+        margin-right: 5px;
+
+    }
+
+    .footer-image {
+        width: 80px;
+        margin: 10px;
     }
 }
