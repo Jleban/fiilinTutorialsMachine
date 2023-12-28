@@ -80,8 +80,6 @@ li {
 }
 
 .header-tutorial-top {
-	/* position: absolute; */
-	/* height: 90px; */
 	margin-left: 5%;
 }
 
@@ -95,7 +93,7 @@ li {
     color: var(--blue);
     margin: auto 0;
     text-align: center; 
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .body-tutorial {
@@ -163,6 +161,10 @@ video {
         display: flex;
         margin-top: -1px;
         z-index: 1000;
+    }
+
+    .header-tutorial-top {
+        margin-left: 30px;
     }
 
     .header-tutorial-top img {
