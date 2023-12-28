@@ -4,12 +4,13 @@
     --blue: #001B25;
     --light-orange: rgba(240, 132, 0, 0.7);
     --extra-light-orange: rgba(240, 132, 0, 0.3);
+    --background-color: #f9f2e0
 }
 
 body {
 	font-family: 'Poppins' , sans-serif;
 	--webkit-font-smoothing: antialiased;
-	background: white;
+	background: var(--background-color);
 	color: #001B25;
     height: 100%;
     margin: 0;
@@ -26,8 +27,9 @@ h1, h2, h3, h4 {
 }
 
 h1{
-	font-size: 32px;
+	font-size: 30px;
     text-align: center;
+    color: var(--beige)
 }
 
 h2{
@@ -66,8 +68,8 @@ li {
 .header-tutorial {
 	width: 100%;
 	position: fixed;
-    min-height: 120px;
-    background-color: white;
+    min-height: 100px;
+    background-color: var(--blue);
 	text-indent: 5px;
     display: flex;
     margin-top: -1px;
@@ -81,9 +83,9 @@ li {
 }
 
 .header-tutorial-top img {
-    margin-top: 10px;
-	width: 185px;
-    height: 100px
+    margin: 10px;
+	width: 145px;
+    /* height: 100px */
 }
 
 .header-tutorial-content {
@@ -120,7 +122,7 @@ video {
 
 .page-down {
 	background-color: var(--blue);
-    margin-top: 30px;
+    margin-top: 10px;
 	display: flex;
     text-align: center;
     margin: 0;
@@ -129,8 +131,8 @@ video {
 }
 
 .footer-image {
-    width: 170px;
-    margin: 20px;
+    width: 120px;
+    margin: 10px;
 }
 
 .questions-email {
@@ -166,7 +168,7 @@ video {
     }
 
     h1{
-        font-size: 30px;
+        font-size: 28px;
         text-align: center;
     }
 
