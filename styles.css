@@ -147,7 +147,7 @@ video {
         width: 100%;
         position: fixed;
         min-height: 80px;
-        background-color: white;
+        background-color: var(--blue);
         text-indent: 5px;
         display: flex;
         margin-top: -1px;
