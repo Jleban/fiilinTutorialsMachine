@@ -80,13 +80,13 @@ li {
 }
 
 .header-tutorial-top {
-	margin-left: 5%;
+    margin: auto 0;
+    margin-left: 5%;
 }
 
 .header-tutorial-top img {
     margin: 10px;
 	width: 145px;
-    /* height: 100px */
 }
 
 .header-tutorial-content {
@@ -164,11 +164,11 @@ video {
     }
 
     .header-tutorial-top {
-        margin-left: 30px;
+        margin: auto 0;
+        margin-left: 5px;
     }
 
     .header-tutorial-top img {
-        margin-top: 10px;
         width: 90px;
         height: 50px
     }
@@ -177,7 +177,7 @@ video {
         color: var(--beige);
         margin: auto 0;
         text-align: center; 
-        margin-left: 0px;
+        margin-left: 5px;
     }
 
     .body-tutorial {
