@@ -151,7 +151,7 @@ video {
 }
 
 
-@media (max-width: 750px) {
+@media (max-width: 750px){
     .header-tutorial {
         width: 100%;
         position: fixed;
@@ -165,19 +165,20 @@ video {
 
     .header-tutorial-top {
         margin: auto 0;
-        margin-left: 5px;
+        margin-left: 0px;
     }
 
     .header-tutorial-top img {
         width: 90px;
-        height: 50px
+        height: 50px;
+        margin: 0px
     }
 
     .header-tutorial-content {
         color: var(--beige);
         margin: auto 0;
         text-align: center; 
-        margin-left: 5px;
+        margin-left: 20px;
     }
 
     .body-tutorial {
@@ -196,5 +197,48 @@ video {
         color: var(--beige);
         margin: auto 0;
         margin-left: 0px
+    }
+}
+
+@media (max-width: 400px) {
+    .header-tutorial {
+        width: 100%;
+        position: fixed;
+        min-height: 80px;
+        background-color: var(--beige);
+        text-indent: 5px;
+        display: flex;
+        margin-top: -1px;
+        z-index: 1000;
+    }
+
+    .header-tutorial-top {
+        margin: auto 0;
+        margin-left: 0px;
+    }
+
+    .header-tutorial-top img {
+        width: 90px;
+        height: 50px;
+        margin: 0px
+    }
+
+    .header-tutorial-content {
+        color: var(--beige);
+        margin: auto 0;
+        text-align: center; 
+        margin-left: 5px;
+    }
+
+    .body-tutorial {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 100px;
+    }
+
+    h1{
+        font-size: 24px;
+        text-align: center;
+        color: var(--blue)
     }
 }
