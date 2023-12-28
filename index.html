@@ -8,7 +8,7 @@
 	<!--for making the website more responsive-->
   	<meta http-equiv="X-UA-compatible" content="ie=">
   	<!--for Favicon-->
-  	<link rel="shortcut icon" type="image/png" href="https://github.com/Jleban/fiilinTutorialsMachine/blob/main/assets/images/fiilin_logo_icone_orange.png">
+  	<link rel="shortcut icon" type="image/png" href="https://github.com/Jleban/fiilinTutorialsMachine/raw/main/assets/images/fiilin_logo_icone_orange.png">
   	<!--for CSS-->
   	<link rel="stylesheet" type="text/css" href="styles.css">
 	<!--link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/ -->
@@ -16,7 +16,7 @@
 
 
 <body>
-	<header class="header-tutorial">
+	<header class="header-tutorial" id="header">
 		<div class="header-tutorial-top">
 			<img src="https://github.com/Jleban/fiilinTutorialsMachine/raw/main/assets/images/Fiilin_logo.png">	
 			<!--for the fiilin icon-->
@@ -29,9 +29,11 @@
 
 
     <div class="body-tutorial">
-        <p>Dans ce tutoriel, nous allons vous expliquer étape par étape comment nettoyer la distributeur Fiilin</p>
+        <p>Dans ce tutoriel, nous allons vous expliquer étape par étape comment nettoyer 
+            la distributeur Fiilin. Il y a des <a href="#" id="scroll-to-week">étapes hebdomaires</a> et des <a href="#" id="scroll-to-monthly">étapes mensuelles.</a>
+        </p>
 
-        <h2>Liste des actions à faire chaque semaine</h2>
+        <h2 id="weekly-actions">Liste des actions à faire chaque semaine</h2>
         <!-- Step 1: opening the machine -->
         <div class="steps">
             <h3>
@@ -55,7 +57,7 @@
             </h3>
             <!-- now we put the video -->
             <p>
-                Remplir les 4 axes de gobelets et bien vérifier que les gobelets sont bien tombés et qu'ils sont au milieu de la colonne. Ne pas remplir les axes à rabord mais laisser une dizaine de cm vide. 
+                Remplir les 4 colonnes de gobelets et bien vérifier que les gobelets sont bien tombés et qu'ils sont au milieu de la colonne. Ne pas remplir les axes à rabord mais laisser une dizaine de cm vide. 
             </p>
             <div class="video-container">
                 <video width="300" controls poster="https://github.com/Jleban/fiilinTutorialsMachine/raw/main/assets/images/first_frames/filling-cups-first-frame.jpg">
@@ -263,7 +265,7 @@
 
         <div class="steps">
             <h3>
-                10. Nettoyage receptacle gobelet
+                11. Nettoyage receptacle gobelet
             </h3>
             <!-- now we put the video -->
             <h4>
@@ -298,7 +300,7 @@
 
         <div class="steps">
             <h3>
-                11. Fermer le distributeur
+                12. Fermer le distributeur
             </h3>
             <!-- now we put the video -->
             <p>
@@ -308,10 +310,10 @@
                         que les becs soient bien en position basse.
                     </li>
                     <li>
-                        les gobelets ont bien été mis.
+                        que les gobelets ont bien été mis.
                     </li>
                     <li>
-                        la hance de la cuve est en position basse.
+                        que la hance de la cuve est en position basse.
                     </li>
                 </ul>
 
@@ -324,7 +326,7 @@
             </div>
         </div>
 
-        <h2>Liste des actions à faire 1 fois par mois</h2>
+        <h2 id="monthly-actions">Liste des étapes mensuelles</h2>
 
         <!-- Step 3: Clean cups carrier -->
         <div class="steps">
@@ -424,6 +426,42 @@
         <p class="questions-email">Des questions ? Envoyer nous un mail: contact@fiilin.fr</p>
 	</footer>
 </body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var headerHeight = document.getElementById("header").offsetHeight;
+
+        // Function to scroll to a target element with an offset
+        function scrollToElement(targetElementId) {
+            var targetElement = document.getElementById(targetElementId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - headerHeight,
+                    behavior: "smooth"
+                });
+            }
+        }
+
+        // Add click event listeners for monthly and weekly actions
+        var scrollToMonthlyElement = document.getElementById("scroll-to-monthly");
+        if (scrollToMonthlyElement) {
+            scrollToMonthlyElement.addEventListener("click", function(event) {
+                event.preventDefault();
+                scrollToElement("monthly-actions");
+            });
+        }
+
+        var scrollToWeeklyElement = document.getElementById("scroll-to-week");
+        if (scrollToWeeklyElement) {
+            scrollToWeeklyElement.addEventListener("click", function(event) {
+                event.preventDefault();
+                scrollToElement("weekly-actions");
+            });
+        }
+    });
+</script>
+
+
 </html>
-<!--end of my shitty priject-->
 

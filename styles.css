@@ -32,6 +32,7 @@ h1{
 
 h2{
 	margin-top: 20px;
+    color: var(--orange);
 }
 
 h4{
@@ -42,7 +43,7 @@ h4{
 
 a{
 	color: var(--blue);
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 p {
@@ -165,7 +166,7 @@ video {
     }
 
     h1{
-        font-size: 26px;
+        font-size: 30px;
         text-align: center;
     }
 
