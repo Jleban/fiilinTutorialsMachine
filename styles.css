@@ -206,6 +206,10 @@ video {
         width: 90px;
         margin: 10px;
     }
+
+    .table-of-content {
+        text-decoration: underline;
+    }
 }
 
 @media (max-width: 400px) {
