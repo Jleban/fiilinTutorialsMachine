@@ -107,10 +107,6 @@ li {
 }
 
 .table-of-content {
-    text-decoration: none;
-}
-
-.table-of-content:hover{
     text-decoration: underline;
 }
 
@@ -205,10 +201,6 @@ video {
     .footer-image {
         width: 90px;
         margin: 10px;
-    }
-
-    .table-of-content {
-        text-decoration: underline;
     }
 }
 
